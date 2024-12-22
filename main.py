@@ -119,7 +119,7 @@ control.throttle = 1.0
 while periapsis() < GEOSTATIONARY_ALTITUDE and periapsis() < apoapsis():
     sleep(0.1)
 control.throttle = 0
-sleep(0.1)
+sleep(1)
 control.throttle = 0
 log("Маневр завершен.")
 log("Выход на геостационарную орбиту выполнен!")
