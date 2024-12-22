@@ -116,12 +116,10 @@ while ut() < burn_ut:
 log("Начало маневра.")
 ap.target_pitch_and_heading(0, 90)
 control.throttle = 1.0
-while periapsis() < GEOSTATIONARY_ALTITUDE and periapsis() < apoapsis():
+while periapsis() + apoapsis() < 2 * GEOSTATIONARY_ALTITUDE:
     sleep(0.1)
 control.throttle = 0
-sleep(1)
-control.throttle = 0
-log("Маневр завершен.")
+log("Манёвр завершен.")
 log("Выход на геостационарную орбиту выполнен!")
 control.activate_next_stage()
 control.activate_next_stage()
