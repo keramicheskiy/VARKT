@@ -119,12 +119,10 @@ control.throttle = 1.0
 while periapsis() + apoapsis() < 2 * GEOSTATIONARY_ALTITUDE:
     sleep(0.1)
 control.throttle = 0
+node.remove()  # Выключение разметки идеальной орбиты
 log("Манёвр завершен.")
 log("Выход на геостационарную орбиту выполнен!")
-control.activate_next_stage()
-control.activate_next_stage()
 log("Поворот спутника в сторону Кёрбина...")
 ap.target_pitch_and_heading(-90, 90)
 sleep(20)
-node.remove()  # Выключение разметки идеальной орбиты
 log("Миссия по выводу спутника на геостационарную орбиту завершена.")
