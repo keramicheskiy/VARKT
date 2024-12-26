@@ -9,7 +9,9 @@
 
 ## Дополнительная информация
 
-Модель ракеты создана в конструкторе Kerbal Space Program
+[Модель ракеты](https://github.com/keramicheskiy/VARKT/blob/main/Proton-M%20EchoStar.craft) создана в конструкторе Kerbal Space Program.
 
-Ссылка на видеоотчет на YouTube
-https://youtu.be/zUaC9xeeAPg
+[Программа автопилота.](https://github.com/keramicheskiy/VARKT/blob/main/main.py)
+
+[Ссылка на видеоотчет](https://youtu.be/zUaC9xeeAPg) на YouTube.
+
